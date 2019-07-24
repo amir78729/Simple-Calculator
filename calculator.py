@@ -5,7 +5,7 @@ while True:
     if continue_or_not:
         a = float(input("type A : "))
     op = input("type op : ")
-    if op == "=":
+    if op == "=" or op == "clear":
         continue_or_not = True
         continue
     elif op == "cos":
@@ -27,6 +27,29 @@ while True:
     elif op == "!":
         print("(" + str(a) + ")! =")
         a = factorial(a)
+        print(a)
+        continue_or_not = False
+        continue
+    elif op == "sqrt":
+        print("√(" + str(a) + ") =")
+        a = sqrt(a)
+        print(a)
+        continue_or_not = False
+        continue
+    elif op == "inverse":
+        print("1 / (" + str(a) + ") =")
+        if a == 0:
+            print("∞")
+            continue_or_not = True
+            continue
+        else:
+            a = 1/a
+            print(a)
+            continue_or_not = False
+            continue
+    elif op == "minus":
+        print("-(" + str(a) + ") =")
+        a *= -1
         print(a)
         continue_or_not = False
         continue
