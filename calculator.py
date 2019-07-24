@@ -9,6 +9,7 @@ while True:
         continue_or_not = True
         continue
     elif op == "cos":
+        print("cos(" + str(a) + ") =")
         a = a % 360
         a = radians(a)
         a = cos(a)
@@ -16,6 +17,7 @@ while True:
         continue_or_not = False
         continue
     elif op == "sin":
+        print("sin(" + str(a) + ") =")
         a = a % 360
         a = radians(a)
         a = sin(a)
@@ -23,11 +25,13 @@ while True:
         continue_or_not = False
         continue
     elif op == "!":
+        print("(" + str(a) + ")! =")
         a = factorial(a)
         print(a)
         continue_or_not = False
         continue
     elif op == "tg" or op == "tan":
+        print("cos(" + str(a) + ") =")
         a = a % 360
         if a % 180 == 0:
             a = 0
