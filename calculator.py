@@ -31,7 +31,7 @@ while True:
         continue_or_not = False
         continue
     elif op == "tg" or op == "tan":
-        print("cos(" + str(a) + ") =")
+        print("tan(" + str(a) + ") =")
         a = a % 360
         if a % 180 == 0:
             a = 0
@@ -53,6 +53,7 @@ while True:
         continue_or_not = False
         continue
     elif op == "exp":
+        print("exp(" + str(a) + ") =")
         a = exp(a)
         print(a)
         continue_or_not = False
@@ -60,19 +61,23 @@ while True:
     b = float(input("type B : "))
 
     if op == "+":
+        print(str(a) + " + " + str(b) + " =")
         a = float(a) + float(b)
         continue_or_not = False
 
     elif op == "-":
+        print(str(a) + " - " + str(b) + " =")
         a = float(a) - float(b)
         continue_or_not = False
 
     elif op == "*":
+        print(str(a) + " * " + str(b) + " =")
         a = float(a) * float(b)
         continue_or_not = False
 
     elif op == "/":
-        if b == "0":
+        print(str(a) + " ÷ " + str(b) + " =")
+        if b == 0:
             print("∞")
             continue_or_not = True
             continue
@@ -81,6 +86,7 @@ while True:
             continue_or_not = False
 
     elif op == "^":
+        print(str(a) + " ^( " + str(b) + " ) =")
         a = float(a)**float(b)
         continue_or_not = False
 
