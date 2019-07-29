@@ -114,5 +114,6 @@ while True:
         continue_or_not = False
 
     print(a)
+    print("------------------")
 
 
